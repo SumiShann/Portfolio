@@ -1,0 +1,58 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.service{
+    height: 166px;
+    width: 100%;
+    color: black;
+    background-color: $color-tertiary;
+    border-radius: $radius;
+    box-shadow: $shadow-service darken(white, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    &.hover{
+        color: white;
+        box-shadow: $shadow-service darken(white, 25%);
+    }
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0; 
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $color-primary;
+        border-radius: 25px;
+        opacity: 0;
+        transition: opacity 350ms;
+    }
+    &-title{
+        font-family: $txt-title;
+        font-size: 1.125rem;
+        font-weight: 400;
+        position: absolute;
+        top: 55px;
+    }
+    &-desc{
+        text-align: center;
+        font-weight: 300;
+        max-width: 90%;
+        position: absolute;
+        top: 90px;
+    }
+    &-icon{
+        position: absolute;
+        top: 90px;
+        font-size: 2.25rem;
+    }
+}

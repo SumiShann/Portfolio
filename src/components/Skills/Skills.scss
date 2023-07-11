@@ -1,0 +1,37 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.tech{
+    width: 70%;
+    @include tablet{
+        width: 80%;
+    }
+    &-content{
+        height: 190px;
+        max-width: 275px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        background-color: $color-tertiary;
+        padding: 20px;
+        border-radius: 35px;
+        margin-bottom: 30px;
+        margin-inline: auto;
+        @include tablet{
+            height: 100px;
+            max-width: 550px;
+            margin-top: 10px;
+            border-radius: 55px;
+        }
+    }
+    img, svg{
+        width: 60px;
+        height: auto;
+        transform: scale(1);
+        transition: transform 350ms;
+        &:hover, :active{
+            transform: scale(1.15);
+        }
+    }
+}

@@ -1,0 +1,88 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.contact{
+    &-content{
+        width: 60%;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        @include tablet{
+            font-size: 1.125rem;
+            width: 65%;
+            margin-bottom: 20px;
+        }
+        @include desktop{
+            align-self: flex-end;
+            width: 32%;
+            font-size: 1.2rem;
+            position: absolute;
+            top: 200px;
+            right: 10vw;
+        }
+    }
+    &-email{
+        &:hover, :active{
+            color: #08E2E2;
+        }
+    }
+}
+.form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet{
+        align-items: flex-start;
+    }
+    @include desktop{
+        width: 55%;
+        align-self: flex-start;
+        margin-left: 10vw;
+        margin-top: 30px;
+    }
+    label{
+        visibility: hidden;
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        border-radius: 35px;
+        margin-bottom: 5px;
+        @include contact-input;
+        @include tablet{
+            width: 60%;
+
+        }
+    }
+    textarea{
+        width: 100%;
+        height: 250px;
+        border-radius: 25px;
+        @include contact-input;
+    }
+    .submit{
+        width: 40%;
+        height: 50px;
+        margin-block: 25px;
+        color: $color-primary;
+        font-family: $txt-title;
+        font-size: 1.3em;
+        font-weight: 500;
+        line-height: 1;
+        transition: box-shadow 300ms;
+        &:hover{
+            box-shadow: 0 0 6px 6px darken($color-primary, 3%);
+            cursor: pointer;
+        }
+        &:active{
+            box-shadow: 0 0 6px 6px darken($color-primary, 5%);
+            color: #08E2E2;
+            cursor: pointer;
+        }
+        @include tablet{
+            width: 25%;
+            align-self: center;
+        }
+    }
+}

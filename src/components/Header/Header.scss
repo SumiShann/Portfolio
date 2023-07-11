@@ -1,0 +1,57 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.header{
+    background-color: $bg-lght;
+    position: fixed;
+    z-index: 5;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    color: black;
+    font-family: $txt-title;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+    @include tablet{
+        padding-inline: 1.5rem;
+    }
+    &-left{
+        display: flex;
+        align-items: center;
+    }
+    &-anim{
+        overflow-x: hidden;
+        position: absolute;
+        left: 40px;
+        @include tablet{
+            left: 50px;
+        }
+    }
+    &-logo{
+        height: 45px;
+        width: auto;
+    }
+    .name{
+        color: $color-primary;
+        font-weight: 500;
+        font-size: 1.5rem;
+        transform: translateX(0px);
+        transition: transform 450ms ease-out;
+        &-slideOut{
+            transform: translateX(-100px);
+        }
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        &-link{
+            margin-left: 1rem;
+            @include tablet{
+                height: 30px;
+                width: auto;
+                margin-left: 1.8rem;
+            }
+        }
+    }
+}

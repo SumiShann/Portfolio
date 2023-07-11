@@ -1,0 +1,111 @@
+@import '../../variables.scss';
+@import '../../mixins.scss';
+
+.stop-prop{
+    position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.modal{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    @include tablet{
+        width: 600px;
+        height: 80vh;
+        top: 130px;
+        left: auto;
+    }
+    @include desktop{
+        width: 800px;
+        top: 60px;
+        height: 500px;
+    }
+    span{
+        color: $color-primary;
+    }
+    &-close{
+        padding: 10px 15px;
+        font-size: 1.25rem;
+        &:hover{
+            cursor: pointer;
+        }
+        @include tablet{
+            font-size: 1.5rem;
+            padding: 15px 20px;
+        }
+    }
+    &-content{
+        padding: 5px 30px;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        @include tablet{
+            padding: 5px 40px;
+            font-size: 1.125rem;
+        }
+        @include desktop{
+            flex-direction: row;
+        }
+    }
+    &-img{
+        width: 100%;
+        height: auto;
+        @include desktop{
+            height: fit-content;
+            width: 325px;
+        }
+    }
+
+    &-line{
+        width: 200px;
+        height: 1px;
+        background-color: $color-primary;
+        align-self: center;
+        margin-block: 20px;
+        @include tablet{
+            margin-block: 30px;
+            width: 300px;
+        }
+        @include desktop{
+            width: 6px;
+            height: 300px;
+            margin-block: 40px;
+            align-self: flex-start;
+            margin-inline: 30px;
+        }
+    }
+    &-github{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        svg{
+            fill: black;
+        }
+        &:hover, :active, svg:hover, svg:active{
+            color: $color-primary;
+            fill: $color-primary;
+            cursor: pointer;
+        }
+        @include desktop{
+            position: absolute;
+            bottom: 35px;
+            left: 125px;
+        }
+    }
+}

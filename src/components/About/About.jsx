@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import './About.scss'
 import womanSitting from "../../assets/sitting-floor.png"
 import CV from "../../assets/CV_French.pdf"
@@ -19,7 +18,7 @@ export default function About(){
                 and take a look at my projects and skills.
             </p>
             <p>
-                Click <Link to={CV} target='_blank'>here</Link> to view my resume.
+                Click <a href={CV} target='_blank'rel='noopener noreferrer'>here</a> to view my resume.
             </p>
             <img
             src={womanSitting}

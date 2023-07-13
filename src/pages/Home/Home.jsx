@@ -8,8 +8,10 @@ import Projects from '../../components/Projects/Projects'
 import Skills from '../../components/Skills/Skills'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
+import { useTranslation } from 'react-i18next'
 
 export default function Home() {
+  const { t } = useTranslation()
   return (
     <>
     <Header />
@@ -27,19 +29,19 @@ export default function Home() {
         </div>
       </section>
       <section id='services' className="services" >
-        <SectionTitle>SERVICES</SectionTitle>
+        <SectionTitle>{t('title.services')}</SectionTitle>
         <Services />
       </section>
       <section id='projects' className="projects" >
-        <SectionTitle>PROJECTS</SectionTitle>
+        <SectionTitle>{t('title.projects')}</SectionTitle>
         <Projects />
       </section>
       <section id='skills' className="skills" >
-        <SectionTitle>SKILLS</SectionTitle>
+        <SectionTitle>{t('title.skills')}</SectionTitle>
         <Skills />
       </section>
       <section id='contact' className="contact" >
-        <SectionTitle type="contact">CONTACT</SectionTitle>
+        <SectionTitle type="contact">{t('title.contact')}</SectionTitle>
         <Contact />
       </section>
     </main>

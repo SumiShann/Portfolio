@@ -1,23 +1,23 @@
 const navLinks = [
     {
         name: "About",
-        href: "/#about"
+        href: "#about"
     },
     {
         name: "Services",
-        href: "/#services"
+        href: "#services"
     },
     {
         name: "Projects",
-        href: "/#projects"
+        href: "#projects"
     },
     {
         name: "Skills",
-        href: '/#skills'
+        href: '#skills'
     },
     {
         name: "Contact",
-        href: "/#contact"
+        href: "#contact"
     }
 ]
 

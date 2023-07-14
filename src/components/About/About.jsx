@@ -1,24 +1,28 @@
 import './About.scss'
 import womanSitting from "../../assets/sitting-floor.png"
 import CV from "../../assets/CV_French.pdf"
+import { useTranslation, Trans } from 'react-i18next'
 
 export default function About(){
+    const { t, i18n } = useTranslation()
     return(
         <div className='about-me'>
             <p>
-                As a front-end developer, I’m interested in giving life to your ideas, 
-                wild as they may be, in order to create the website that fits <i>your</i> needs.
+                <Trans i18nKey="about.p1">
+                    As a front-end developer, I’m interested in giving life to your ideas, 
+                    wild as they may be, in order to create the website that fits <i>your</i> needs.
+                </Trans>
             </p>
             <p>
-                I mainly use React, and can partner up with a back-end developer 
-                for a dynamic website project.
+                {t('about.p2')}
             </p>
             <p>
-                If you wish to know more about me, I invite you to scroll down 
-                and take a look at my projects and skills.
+                {t('about.p3')}
             </p>
             <p>
-                Click <a href={CV} target='_blank'rel='noopener noreferrer'>here</a> to view my resume.
+                <Trans i18nKey="about.p4">
+                    Click <a href={CV} target='_blank'rel='noopener noreferrer'>here</a> to view my<br/> resume.
+                </Trans>
             </p>
             <img
             src={womanSitting}

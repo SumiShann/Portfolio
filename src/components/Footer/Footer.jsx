@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { Link } from "react-router-dom"
 
-export default function Footer(){
+export default function Footer({t}){
     return(
         <footer className='footer'>
             <ul className='footer-link'>
@@ -25,8 +25,8 @@ export default function Footer(){
                     </Link></li>
             </ul>
             <div className='footer-rights'>
-                <p>© 2023 Violaine BARRAL, All rights reserved.</p>
-                <p>Logo © 2023 Sara OUASTI, All rights reserved.</p>
+                <p>© 2023 Violaine BARRAL, {t('footer.rights')}</p>
+                <p>Logo © 2023 Sara OUASTI, {t('footer.rights')}</p>
             </div>
         </footer>
     )

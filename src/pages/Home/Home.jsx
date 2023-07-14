@@ -42,10 +42,10 @@ export default function Home() {
       </section>
       <section id='contact' className="contact" >
         <SectionTitle type="contact">{t('title.contact')}</SectionTitle>
-        <Contact />
+        <Contact t={t}/>
       </section>
     </main>
-    <Footer />
+    <Footer t={t}/>
     </>
   )
 }

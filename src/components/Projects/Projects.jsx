@@ -1,8 +1,11 @@
+import { useTranslation } from "react-i18next";
 import ProjectCard from "../ProjectCard/ProjectCard"
-import projectsData from "../../data/projectsData"
 import "./Projects.scss"
 
 export default function Projects(){
+    const { t } = useTranslation()
+    const projectsData = t('projects', { returnObjects: true });
+
     return (
         <div className="project-section">
             {projectsData.map((elt) => (

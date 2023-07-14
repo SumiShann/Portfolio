@@ -24,10 +24,10 @@
   flex-direction: column;
   align-items: center;
   @include tablet{
-    width: 45%;
+    width: 50%;
   }
   @include desktop{
-    width: 40%;
+    width: 45%;
   }
 }
 

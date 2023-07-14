@@ -12,6 +12,12 @@
     }
 }
 
+@mixin big-screen {
+    @media all and (min-device-width: 1200px){
+        @content;
+    }
+}
+
 @mixin contact-input {
     font-size: 1rem;
     font-family: $txt-normal;

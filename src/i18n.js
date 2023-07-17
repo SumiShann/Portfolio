@@ -126,7 +126,9 @@ i18n
             name: "Name",
             email: "Email",
             message: "Message",
-            send: "SEND"
+            send: "SEND",
+            success: "Your message was sent succesfully",
+            error: "An issue came up. Please try again later"
           },
           footer: {
             rights: "All rights reserved."
@@ -233,7 +235,9 @@ i18n
             name: "Nom",
             email: "Email",
             message: "Message",
-            send: "ENVOYER"
+            send: "ENVOYER",
+            success: "Votre message a été envoyé avec succès",
+            error: "Un problème est survenu. Veuillez réessayer ultérieurement"
           },
           footer: {
             rights: "Tous droits réservés."

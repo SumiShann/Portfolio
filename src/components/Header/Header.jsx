@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import smallLogo from '../../assets/logo_small.png'
+import smallLogo from '../../assets/logo_small_300w.png'
 import menuIcon from '../../assets/menu-icon.svg'
 import franceIcon from '../../assets/france-icon.png'
 import usaIcon from '../../assets/usa-icon.png'

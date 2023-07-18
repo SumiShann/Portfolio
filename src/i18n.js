@@ -3,11 +3,11 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 import argentBank from "./assets/argentBank.png";
-import argentBankModal from "./assets/argentBank-modal.png";
+import argentBankModal from "./assets/argentBank-modal_920w.png";
 import kasa from "./assets/kasa.png";
-import kasaModal from "./assets/kasa-modal.png";
+import kasaModal from "./assets/kasa-modal_920w.png";
 import carducci from "./assets/carducci.png";
-import carducciModal from "./assets/carducci-modal.png";
+import carducciModal from "./assets/carducci-modal_920w.png";
 import { faCode, faMagnifyingGlass, faMobileScreenButton, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 

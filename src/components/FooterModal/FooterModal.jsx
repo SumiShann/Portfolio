@@ -11,7 +11,7 @@ export default function FooterModal({t, onClick}){
     }
     const { i18n } = useTranslation()
 
-    const { data }  = useFetch('https://api.weatherapi.com/v1/current.json?q=Paris&key=fb5ad99ff3cb448cb4c152300231707')
+    const { data, isLoading }  = useFetch('https://api.weatherapi.com/v1/current.json?q=Paris&key=fb5ad99ff3cb448cb4c152300231707')
     const weather = data.current?.condition.icon
 
     const timezone = 'Europe/Paris'
@@ -35,7 +35,13 @@ export default function FooterModal({t, onClick}){
                     <p>{t('footer.country')}</p>
                     <p>{today}</p>
                     <p>{time.toLocaleTimeString(i18n.resolvedLanguage, {timeZone: timezone})}</p>
+                    {isLoading ? 
+                    <div class="loader">
+                        <div class="loader_circle"></div>
+                    </div>
+                    :
                     <img src={weather} alt="weather" />
+                    }
                 </div>
             </div>
         </div>

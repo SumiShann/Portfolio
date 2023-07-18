@@ -40,13 +40,7 @@
             padding: 15px 20px;
         }
         @include desktop{
-            display: block;
-            position: relative;
-            padding: 15px 15px 14px 15px;
-            &:has(.active){
-                background-color: $color-primary;
-                color: white;
-            }
+            padding: 0px;
         }
     }
     &-link{
@@ -56,6 +50,13 @@
         }
         @include desktop{
             font-size: 1rem;
+            padding: 15px 15px 14px 15px;
+            display: block;
+            position: relative;
+            &.active{
+                background-color: $color-primary;
+                color: white;
+            }
         }
     }
 }

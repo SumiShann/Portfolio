@@ -27,6 +27,7 @@ export default function About(){
             <img
             src={womanSitting}
             alt="woman sitting on the floor with a laptop and a cup of coffee in hand"
+            fetchpriority="high"
             />
         </div>
     )

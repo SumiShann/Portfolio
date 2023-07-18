@@ -20,6 +20,7 @@ export default function Modal({onClick, image, content, github}){
                 src={image}
                 alt='project image'
                 className='modal-img'
+                loading='lazy'
                 />
                 <div className='modal-line'></div>
                 <p className='modal-text'>{content}</p>

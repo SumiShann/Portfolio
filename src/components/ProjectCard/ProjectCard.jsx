@@ -13,6 +13,7 @@ export default function ProjectCard({cover, title, tags, image, content, github}
                 src={cover}
                 alt='project image'
                 className='project-img'
+                loading='lazy'
                 />
                 <div className='project-desc'>
                     <div className='project-tags'>

@@ -1,4 +1,4 @@
-import bigLogo from "../../assets/logo_big_1000w.png"
+import bigLogo from "../../assets/logo_big_1000w.webp"
 import './MainLogo.scss'
 
 export default function MainLogo(){

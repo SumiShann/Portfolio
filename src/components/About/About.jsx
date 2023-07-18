@@ -21,7 +21,7 @@ export default function About(){
             </p>
             <p>
                 <Trans i18nKey="about.p4">
-                    Click <a href={CV} target='_blank'rel='noopener noreferrer'>here</a> to view my<br/> resume.
+                    Click <a href={CV} target='_blank'rel='noopener noreferrer' aria-label='CV.pdf'>here</a> to view my<br/> resume.
                 </Trans>
             </p>
             <img

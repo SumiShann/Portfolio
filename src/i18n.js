@@ -2,12 +2,12 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-import argentBank from "./assets/argentBank.png";
-import argentBankModal from "./assets/argentBank-modal_920w.png";
-import kasa from "./assets/kasa.png";
-import kasaModal from "./assets/kasa-modal_920w.png";
-import carducci from "./assets/carducci.png";
-import carducciModal from "./assets/carducci-modal_920w.png";
+import argentBank from "./assets/argentBank.webp";
+import argentBankModal from "./assets/argentBank-modal_920w.webp";
+import kasa from "./assets/kasa.webp";
+import kasaModal from "./assets/kasa-modal_920w.webp";
+import carducci from "./assets/carducci.webp";
+import carducciModal from "./assets/carducci-modal_920w.webp";
 import { faCode, faMagnifyingGlass, faMobileScreenButton, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 

@@ -11,7 +11,7 @@ export default function ProjectCard({cover, title, tags, image, content, github}
             <div className='project' onClick={() => setIsOpen(true)}>
                 <img
                 src={cover}
-                alt='project image'
+                alt='web project'
                 className='project-img'
                 loading='lazy'
                 />

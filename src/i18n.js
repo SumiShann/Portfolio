@@ -131,6 +131,7 @@ i18n
             error: "An issue came up. Please try again later"
           },
           footer: {
+            country: "France",
             rights: "All rights reserved."
           }
         }
@@ -240,6 +241,7 @@ i18n
             error: "Un problème est survenu. Veuillez réessayer ultérieurement"
           },
           footer: {
+            country: "France",
             rights: "Tous droits réservés."
           }
         }

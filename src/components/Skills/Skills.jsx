@@ -9,7 +9,7 @@ import git from '../../assets/git.png'
 import vs from '../../assets/vscode.png'
 import swagger from '../../assets/swagger.png'
 import i18next from '../../assets/i18next.png'
-import notion from '../../assets/notion.png'
+import notion from '../../assets/Notion.png'
 
 export default function Skills(){
     return(

@@ -117,7 +117,7 @@ i18n
               title: 'Optimizing SEO & Accessibility',
               tags: ['SEO'],
               image: carducciModal,
-              content: "The tasks of this project were to optimize loading and general SEO for this photographer's portfolio website. Through this project, I found out how to optimize images for the web, lazy loading on multiple devices, accessibility, social media meta tags, and local referencing. I used LightHouse reports, schema.org.",
+              content: "The tasks of this project were to optimize loading and general SEO for this photographer's portfolio website. Through this project, I found out how to optimize images for the web, lazy loading on multiple devices, accessibility, social media meta tags, and local referencing. I used LightHouse reports, schema.org and Wave Extension.",
               github: "https://github.com/SumiShann/Carducci-OC"
             }
           ],
@@ -227,7 +227,7 @@ i18n
               title: "Optimiser le SEO et l'accessibilité",
               tags: ['SEO'],
               image: carducciModal,
-              content: "Les tâches de ce projet étaient d'optimiser le chargement et le SEO général du site portfolio d'une photographe. À travers ce projet, j'ai découvert comment optimiser les images pour le web, lazy loading sur divers appareils, comment maximiser l'accessibilité, les balises meta pour les réseaux sociaux, ainsi que le référencement local. Je me suis aidée des rapports Lighthouse et de schema.org.",
+              content: "Les tâches de ce projet étaient d'optimiser le chargement et le SEO général du site portfolio d'une photographe. À travers ce projet, j'ai découvert comment optimiser les images pour le web, lazy loading sur divers appareils, comment maximiser l'accessibilité, les balises meta pour les réseaux sociaux, ainsi que le référencement local. Je me suis aidée des rapports Lighthouse, de schema.org et de l'extension Wave.",
               github: "https://github.com/SumiShann/Carducci-OC"
             }
           ],

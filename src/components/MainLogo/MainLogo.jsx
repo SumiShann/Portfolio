@@ -10,6 +10,8 @@ export default function MainLogo(){
             alt='logo V web developer'
             className="logo"
             fetchpriority="high"
+            width="250"
+            height="250"
             />
             <div className='bottom-v'></div><div className='bottom-h'></div>
         </div>

@@ -36,6 +36,8 @@ export default function Header(){
         alt='logo V'
         fetchpriority="high"
         className='header-logo'
+        width="55"
+        height="45"
         />
         <div className='header-anim'>
           <p className={`name ${offset ? `name-slideOut`: ``}`}>IOLAINE</p>
@@ -51,6 +53,8 @@ export default function Header(){
                   alt='Language flag' 
                   fetchpriority='high' 
                   className='flag flag-open'
+                  width="37.5"
+                  height="25"
                   onClick={() => setIsOpenLng(false)}/>
                 </button>
               ))}
@@ -62,6 +66,8 @@ export default function Header(){
               alt='Current language flag'
               fetchpriority="high"
               className='nav-link flag'
+              width="37.5"
+              height="25"
               />
             </button>
           }
@@ -73,6 +79,8 @@ export default function Header(){
               alt='menu icon'
               className='nav-link'
               fetchpriority="high"
+              width="25"
+              height="30"
               /> 
           </button>
           {isOpen && <Menu onClick={() => setIsOpen(false)} />}
@@ -88,6 +96,8 @@ export default function Header(){
                   alt='Language flag' 
                   fetchpriority='high' 
                   className='flag flag-open'
+                  width="37.5"
+                  height="25"
                   onClick={() => setIsOpenLng(false)}/>
                 </button>
               ))}
@@ -99,6 +109,8 @@ export default function Header(){
               alt='Current language flag'
               fetchpriority="high"
               className='nav-link flag'
+              width="37.5"
+              height="25"
               />
             </button>
           }

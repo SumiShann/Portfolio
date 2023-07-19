@@ -28,6 +28,8 @@ export default function About(){
             src={womanSitting}
             alt="woman sitting on the floor with a laptop and a cup of coffee in hand"
             fetchpriority="high"
+            width="114"
+            height="134"
             />
         </div>
     )
